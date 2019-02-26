@@ -25,6 +25,10 @@ public class Main {
         f1.setCOUNTER(3);
         System.out.println(f1.getCOUNTER());
         System.out.println(f2.getCOUNTER());
-        
+
+        System.out.println(f1.isInside(0.1, 0.3));
+
+        MonteCarlo mC = new MonteCarlo();
+        System.out.println(mC.randomMethod(1000));
     }
 }

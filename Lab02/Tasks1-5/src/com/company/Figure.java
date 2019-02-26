@@ -18,6 +18,14 @@ public class Figure {
         uniqueCounter = COUNTER;
     }
 
+    public Figure(double dimension) {
+        field = 0;
+        perimeter = 0;
+        this.dimension = dimension;
+        name = "none";
+        uniqueCounter = COUNTER;
+    }
+
     /** SETTERS AND GETTERS */
     public static int getCOUNTER() {
         return COUNTER;
@@ -118,5 +126,9 @@ public class Figure {
         } else {
             this.perimeter = temp;
         }
+    }
+
+    public boolean isInside(double x, double y) {
+        return dimension > Math.pow(x, 2) + Math.pow(y, 2);
     }
 }
