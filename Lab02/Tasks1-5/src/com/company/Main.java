@@ -20,6 +20,11 @@ public class Main {
         System.out.println(f1);
         System.out.println(f2);
 
-
+        System.out.println(f1.getCOUNTER());
+        System.out.println(f2.getCOUNTER());
+        f1.setCOUNTER(3);
+        System.out.println(f1.getCOUNTER());
+        System.out.println(f2.getCOUNTER());
+        
     }
 }

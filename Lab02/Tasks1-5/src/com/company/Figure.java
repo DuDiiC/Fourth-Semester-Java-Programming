@@ -2,19 +2,31 @@ package com.company;
 
 public class Figure {
 
+    private static int COUNTER = 0;
+
     private double field;
     private double perimeter;
     private double dimension;
     private String name;
+    private int uniqueCounter;
 
     public Figure() {
         field = 0;
         perimeter = 0;
         dimension = 0;
         name = "none";
+        uniqueCounter = COUNTER;
     }
 
     /** SETTERS AND GETTERS */
+    public static int getCOUNTER() {
+        return COUNTER;
+    }
+
+    public static void setCOUNTER(int COUNTER) {
+        Figure.COUNTER = COUNTER;
+    }
+
     public double getField() {
         return field;
     }
@@ -47,6 +59,14 @@ public class Figure {
         this.name = name;
     }
 
+    public int getUniqueCounter() {
+        return uniqueCounter;
+    }
+
+    public void setUniqueCounter(int uniqueCounter) {
+        this.uniqueCounter = uniqueCounter;
+    }
+
     public void print() {
         System.out.println("Figure: " + name);
         System.out.println("Field: " + field);
@@ -60,12 +80,14 @@ public class Figure {
         String figure = "Figure: " + name;
 
         if(field > 0) {
-            figure += ", field="+field;
+            figure += ", field=" + field;
         }
 
         if(perimeter > 0) {
-            figure += ", perimeter="+perimeter;
+            figure += ", perimeter=" + perimeter;
         }
+
+        figure += ", uniqueCounter=" + uniqueCounter;
 
         return figure;
     }
