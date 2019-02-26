@@ -75,4 +75,26 @@ public class Figure {
         this.field = field;
         this.perimeter = perimeter;
     }
+
+    public void setValues(double dimension) {
+        this.dimension = dimension;
+    }
+
+    public void setValues(String name) {
+        this.name = name;
+    }
+
+    /** I can't do this, because it is the same function, not overloaded.
+    public void setValues(double field) {
+        this.field = field;
+    }*/
+
+    /** alternative method */
+    public void setValue(double temp, boolean flag) {
+        if(flag) {
+            this.field = temp;
+        } else {
+            this.perimeter = temp;
+        }
+    }
 }
