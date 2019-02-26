@@ -4,13 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Figure f = new Figure();
+        Figure f1 = new Figure();
+        Figure f2 = new Figure();
 
-        f.setField(10.2);
-        f.setPerimeter(13.2);
-        f.setDimention(3);
-        f.setName("First");
+        f1.setField(10.2);
+        f1.setPerimeter(-13.2);
+        f1.setDimention(3);
+        f1.setName("Circle");
 
-        f.print();
+        f2.setField(8);
+        f2.setPerimeter(11.432);
+        f2.setDimention(2);
+        f2.setName("Square");
+
+        System.out.println(f1);
+        System.out.println(f2);
+
+
     }
 }

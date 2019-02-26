@@ -52,4 +52,29 @@ public class Figure {
         System.out.println("Field: " + field);
         System.out.println("Perimeter: " + perimeter);
     }
+
+    /** toString() method */
+    @Override
+    public String toString() {
+
+        String figure = "Figure: " + name;
+
+        if(field > 0) {
+            figure += ", field="+field;
+        }
+
+        if(perimeter > 0) {
+            figure += ", perimeter="+perimeter;
+        }
+
+        return figure;
+    }
+
+    /** SET VALUES METHODS */
+    public void setValues(double field, double perimeter) {
+        this.field = field;
+        this.perimeter = perimeter;
+    }
+
+
 }
