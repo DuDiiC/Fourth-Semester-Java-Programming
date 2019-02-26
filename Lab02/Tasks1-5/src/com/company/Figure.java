@@ -4,13 +4,13 @@ public class Figure {
 
     private double field;
     private double perimeter;
-    private double dimention;
+    private double dimension;
     private String name;
 
     public Figure() {
         field = 0;
         perimeter = 0;
-        dimention = 0;
+        dimension = 0;
         name = "none";
     }
 
@@ -31,12 +31,12 @@ public class Figure {
         this.perimeter = perimeter;
     }
 
-    public double getDimention() {
-        return dimention;
+    public double getDimension() {
+        return dimension;
     }
 
-    public void setDimention(double dimention) {
-        this.dimention = dimention;
+    public void setDimension(double dimension) {
+        this.dimension = dimension;
     }
 
     public String getName() {
@@ -75,6 +75,4 @@ public class Figure {
         this.field = field;
         this.perimeter = perimeter;
     }
-
-
 }
