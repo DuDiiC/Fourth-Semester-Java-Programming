@@ -22,6 +22,7 @@ public class Main {
             end = scanner.nextInt();
 
             System.out.println(iSum.calculateSum(start, end));
+            System.out.println(iSum.calculateSumInConstTime(start, end));
         }
 
         scanner.close();
