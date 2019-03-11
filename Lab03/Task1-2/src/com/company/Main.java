@@ -19,5 +19,16 @@ public class Main {
             System.out.println(f);
         }
 
+        Stack s = new Stack();
+        s.add(tab[0]);
+        s.add(tab[1]);
+        s.add(tab[2]);
+
+        System.out.println();
+        System.out.println();
+        while(!s.isEmpty()) {
+            Object o = s.remove(s.size()-1);
+            System.out.println(o);
+        }
     }
 }
