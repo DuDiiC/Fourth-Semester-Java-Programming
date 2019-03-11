@@ -31,4 +31,11 @@ public class Circle extends Figure {
     public void calculatePerimeter() {
         perimeter = 2*Math.PI*radius;
     }
+
+    @Override
+    public void enlarge(double scale) {
+        radius *= scale;
+        calculateField();
+        calculatePerimeter();
+    }
 }

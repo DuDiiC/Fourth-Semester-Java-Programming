@@ -38,4 +38,12 @@ public class Rectangle extends Figure {
     public void calculatePerimeter() {
         perimeter = 2*sideA + 2*sideB;
     }
+
+    @Override
+    public void enlarge(double scale) {
+        sideA *= scale;
+        sideB *= scale;
+        calculateField();
+        calculatePerimeter();
+    }
 }

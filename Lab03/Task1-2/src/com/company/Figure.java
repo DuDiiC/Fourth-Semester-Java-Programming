@@ -139,4 +139,6 @@ public class Figure {
     public void calculatePerimeter() {
         perimeter = 0;
     }
+
+    public void enlarge(double scale) {}
 }
