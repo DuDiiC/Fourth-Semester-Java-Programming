@@ -1,0 +1,5 @@
+mleko	A	2.55
+chleb	A	2.00
+kawa	C	12.85
+sok	B	3.50
+herbata	C	7.99
