@@ -34,7 +34,6 @@ public class ReadFromCSVFile {
     }
 
     void printData() {
-        System.out.println(dataFromFile.size() + " " + dataFromFile.get(0).size());
         for(int i = 0; i < dataFromFile.size(); i++) {
             for(int j = 0; j < dataFromFile.get(i).size(); j++) {
                 System.out.print(dataFromFile.get(i).get(j)+"\t");
