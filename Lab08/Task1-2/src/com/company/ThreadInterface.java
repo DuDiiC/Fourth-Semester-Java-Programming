@@ -9,7 +9,7 @@ public class ThreadInterface implements Runnable {
     public void run() {
         Random random = new Random();
         for(int i = 0; i < 100; i++) {
-            int sleepTime = Math.abs(random.nextInt()%10000);
+            int sleepTime = Math.abs(random.nextInt()%1000);
             Thread thread = Thread.currentThread();
             System.out.println("Thread " + thread.getId() + " number " + i);
             try {

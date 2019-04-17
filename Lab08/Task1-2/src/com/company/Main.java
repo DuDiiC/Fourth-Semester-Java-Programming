@@ -2,8 +2,6 @@ package com.company;
 
 import java.util.Random;
 
-import static java.lang.Thread.sleep;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -27,6 +25,11 @@ public class Main {
 	    Thread t2 = new Thread(new ThreadInterface());
 	    Thread t3 = new Thread(new ThreadInterface());
 	    Thread t4 = new Thread(new ThreadInterface());
+
+	    t1.setPriority(Thread.MAX_PRIORITY);
+	    t2.setPriority(Thread.NORM_PRIORITY);
+	    t3.setPriority(Thread.MIN_PRIORITY);
+	    t4.setPriority(Thread.NORM_PRIORITY);
 
 	    t1.start();
 	    t2.start();
