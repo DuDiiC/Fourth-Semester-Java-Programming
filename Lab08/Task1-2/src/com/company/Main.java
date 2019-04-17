@@ -3,10 +3,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    PrintThread t1 = new PrintThread();
-	    PrintThread t2 = new PrintThread();
-	    PrintThread t3 = new PrintThread();
-	    PrintThread t4 = new PrintThread();
+    	
+	    Thread t1 = new Thread(new ThreadInterface());
+	    Thread t2 = new Thread(new ThreadInterface());
+	    Thread t3 = new Thread(new ThreadInterface());
+	    Thread t4 = new Thread(new ThreadInterface());
 
 	    t1.start();
 	    t2.start();
