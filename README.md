@@ -4,7 +4,7 @@ Tasks from the laboratory: [__Programming III__](https://usosweb.umk.pl/kontrole
 
 All tasks in .pdf files are in repository.
 
-When solving tasks, I use the __Java 8__.
+When solving tasks, I used the __Java 8__.
 
 ---
 
