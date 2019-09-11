@@ -1,0 +1,7 @@
+mleko;B;2.55
+chleb;A;2.00
+kawa;B;12.85
+sok;B;3.50
+herbata;A;7.99
+cukier;A;1.59
+jajka;B;5.35
